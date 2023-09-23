@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Pacifico&display=swap");
+
+@font-face {
+  font-family: "Stella";
+  src: url("../fonts/StellaDemo.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #f39e28;
+}
+
+header {
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px 0;
+  font-family: "Pacifico", cursive;
+}
+
+#logo {
+  width: 200px;
+  transition: 300ms;
+}
+
+#logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-list {
+  display: inline-flex;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.nav-item {
+  padding: 10px;
+  display: block;
+  border-radius: 10px;
+  list-style: none;
+  font-size: 30px;
+  /*  */
+  color: #000;
+
+  transition: 300ms ease;
+}
+
+.nav-item:hover {
+  background: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section {
+  width: 100%;
+}
+
+.sobre-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.sobre-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Inter", sans-serif;
+}
+
+.sobre-texto {
+  font-size: 30px;
+  text-wrap: wrap;
+  max-width: 50%;
+}
+
+.btn {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 20px;
+  font-weight: bold;
+  border: none;
+  background: var(--primary-color);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.doces-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.doces-title {
+  background: #fff;
+  font-size: 60px;
+  font-family: "Pacifico", cursive;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.doces-conteudo {
+  width: 90%;
+  height: 60vh;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 30px;
+  background-image: url("../images/endless-constellation.svg");
+  overflow-y: auto;
+}
+
+.doces-conteudo::-webkit-scrollbar {
+  width: 20px; /* width of the entire scrollbar */
+}
+
+.doces-conteudo::-webkit-scrollbar-track {
+  background: #000000; /* color of the tracking area */
+}
+
+.doces-conteudo::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+.doce-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  border-radius: 20px;
+  width: 350px;
+  height: auto;
+  background: #fff;
+  padding-bottom: 20px;
+  font-family: "Pacifico", cursive;
+  transition: 0.35s;
+  cursor: pointer;
+}
+.doce-card p {
+  font-size: 50px;
+}
+
+.doce-card img {
+  border-radius: 10px 10px 0 0;
+  width: 350px;
+  height: 300px;
+}
+
+.doces-conteudo:hover > :not(:hover) {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+
+#carregando {
+  font-family: sans-serif;
+  font-size: 50px;
+  color: #fff;
+}

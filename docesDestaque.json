@@ -1,0 +1,18 @@
+[
+  {
+    "image": "./assets/images/rosquinhas.jpg",
+    "title": "Rosquinhas"
+  },
+  {
+    "image": "./assets/images/brigadeiros.jpg",
+    "title": "Brigadeiros"
+  },
+  {
+    "image": "./assets/images/macaDoAmor.jpg",
+    "title": "Maçã Do Amor"
+  },
+  {
+    "image": "./assets/images/Mochi.jpg",
+    "title": "Mochi"
+  }
+]
