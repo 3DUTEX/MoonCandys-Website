@@ -1,6 +1,6 @@
 const docesConteudo = document.querySelector(".doces-conteudo");
 const carregando = document.querySelector("#carregando");
-
+const navBar = document.querySelector(".nav-bar");
 (async function getDoces() {
   const response = await fetch("docesDestaque.json");
   const docesDestaque = await response.json();
@@ -31,4 +31,12 @@ function criaDoceCard(nome, urlImagem) {
   doceCard.appendChild(button);
 
   return doceCard;
+}
+
+function exibeMenu() {
+  navBar.style.display = "flex";
+}
+
+function fechaMenu() {
+  navBar.style.display = "none";
 }
