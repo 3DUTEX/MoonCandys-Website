@@ -94,7 +94,7 @@ header {
   max-width: 50%;
 }
 
-.btn {
+.btn-sobre {
   margin-top: 20px;
   color: #fff;
   font-size: 30px;
@@ -142,11 +142,12 @@ header {
 }
 
 .doces-conteudo::-webkit-scrollbar {
-  width: 20px; /* width of the entire scrollbar */
+  width: 20px;
 }
 
 .doces-conteudo::-webkit-scrollbar-track {
-  background: #000000; /* color of the tracking area */
+  border-radius: 0 10px 10px 0;
+  background: #000000;
 }
 
 .doces-conteudo::-webkit-scrollbar-thumb {
@@ -182,9 +183,52 @@ header {
   opacity: 0.4;
   transform: scale(0.9);
 }
+.btn {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 20px;
+  font-weight: bold;
+  border: none;
+  background: var(--primary-color);
+  transition: 300ms;
+  cursor: pointer;
+}
 
 #carregando {
   font-family: sans-serif;
   font-size: 50px;
   color: #fff;
+}
+
+@media (max-width: 500px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .sobre-texto {
+    margin: 30px;
+    max-width: 100%;
+  }
+
+  .btn-sobre {
+    width: 100%;
+  }
+
+  .sobre-conteudo img {
+    width: 100%;
+  }
+
+  .doce-card {
+    width: 100%;
+  }
+
+  .doce-card p {
+    font-size: 40px;
+  }
+
+  .doce-card img {
+    width: 100%;
+  }
 }
